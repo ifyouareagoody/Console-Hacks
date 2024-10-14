@@ -8,7 +8,7 @@ function glitchElement(el) {
     el.style.left = getRandom(-10, 10) + 'px';
     el.style.top = getRandom(-10, 10) + 'px';
 
-    // rotate
+    // rotate elements randomly
     el.style.transform = `rotate(${getRandom(-5, 5)}deg)`;
 
     // random bg clolor
@@ -24,7 +24,7 @@ function glitchPage() {
         }
     });
 
-    // Glitch every 300 ms
+    // Glitch every 300ms
     setTimeout(glitchPage, 300);
 }
 
