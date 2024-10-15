@@ -1,3 +1,4 @@
+// Paste this code into your browser console to work.  If you are not sure what this does, do not paste, if you are, go ahead!
 function getRandom(min, max) {
     return Math.random() * (max - min) + min;
 }
