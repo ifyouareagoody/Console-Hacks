@@ -18,7 +18,7 @@
     document.body.appendChild(gameContainer);
 
     // Adds the words to the word list
-    const words = ["pneumonoultramicroscopicsilicovolcanoconiosis", "pseudopseudohypoparathyroidism", "chargoggagoggmanchauggagoggchaubunagungamaugg", "Supercalifragilisticexpialidocious", "Floccinaucinihilipilification"];
+    const words = ["pneumonoultramicroscopicsilicovolcanoconiosis", "pseudopseudohypoparathyroidism", "chargoggagoggmanchauggagoggchaubunagungamaugg", "supercalifragilisticexpialidocious", "floccinaucinihilipilification"];
     const selectedWord = words[Math.floor(Math.random() * words.length)];
     let guessedLetters = [];
     let incorrectLetters = [];
@@ -60,7 +60,7 @@
 
     function checkGameOver() {
         if (remainingAttempts <= 0) {
-            messageDisplay.textContent = `Game Over! EZ "${selectedWord}".`;
+            messageDisplay.textContent = `Game Over! EZ the word is: "${selectedWord}".`;
             guessButton.disabled = true;
         } else if (selectedWord.split('').every(letter => guessedLetters.includes(letter))) {
             messageDisplay.textContent = "Congratulations! ggs!";
