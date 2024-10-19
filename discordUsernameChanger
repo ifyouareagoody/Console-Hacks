@@ -1,0 +1,13 @@
+function changeUsernames() {
+    const newText = prompt("What do you want your (and your friend's) Discord display name to say?");
+
+    // selects all the username parts in the html code
+    const spans = document.querySelectorAll('span.username_f9f2ca.desaturateUserColors_c7819f.clickable_f9f2ca');
+
+    spans.forEach(span => {
+        span.textContent = newText;
+    });
+}
+
+// calls the function
+changeUsernames();
